@@ -77,32 +77,20 @@ a {
 
 .logo {
     display: flex;
-    padding: 0px 0px 50px 0px;
+    margin: 0px 0px 0px 0px;
     flex-direction: column;
     align-items: flex-start;
     outline: 1px solid transparent;
 }
 
-h1 {
-    color: #000;
-    font-family: Raleway;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    align-self: stretch;
-    margin-bottom: 8px;
+/*************** Nav Bar **************/
+.main-container header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 0px;
 }
 
-.logo p {
-    color: #000;
-    font-family: Raleway;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 0;
-}
 
 nav ul {
     list-style-type: none; /*enleve markers list*/
@@ -142,6 +130,27 @@ nav ul li {
 /**************** Barre de Recherche ***********/
 
 
+.barre-de-recherche h1 {
+    color: #000;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: stretch;
+    margin-bottom: 8px;
+}
+
+.barre-de-recherche p {
+    color: #000;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+}
+
 .localisation i {
     display: flex;
     width: 50px;
@@ -154,12 +163,9 @@ nav ul li {
 
 .barre-de-recherche {
     display: flex;
-    width: 377px;
-    height: 49px;
-    align-items: center;
-    border: 1px solid var(--grey, #F2F2F2);
+    flex-direction: column;
     background: var(--white, #FFF);
-    padding: 35px;
+    padding:35px 0px 35px 0px;
 }
 
 .town {
@@ -230,9 +236,8 @@ nav ul li {
 .filtre {
     display: flex;
     height: 50px;
-    padding: 4px 19px; 
+    padding: 0px 19px; 
     align-items: center;
-    gap: 10px;
     border-radius: 25px;
     border: 2px solid var(--grey-tint-2, #D9D9D9);
 
@@ -256,8 +261,7 @@ nav ul li {
 
 .filtres-container i {
     width: 22px;
-    height: 22px;
-    
+    margin: 0px 10px 0px 0px;
 }
 
 .filtre:hover {
@@ -299,62 +303,51 @@ nav ul li {
     padding: 30px;
 }
 
-.hebergements-cards .card {
+.hebergements-cards {
     display: flex;
-    height: 207px;
-    width: 100%;
-    max-width: 250px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.hebergements-card {
+    display: flex;
+    height: 207.5px; /* height specified */
+    width: 250.33px; /* widht specified */
     flex-direction: column;
-    align-items: center;
-    flex: 1 0 0; /**????**/
     border-radius: 20px;
     background: #FFF;
+    padding: 5px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    overflow: hidden; /* shure content dont go away */
+    margin-bottom: 30px;
+    
 }
 
-.hebergements-cards img {
+.hebergements-card img {
     height: 124px;
-    align-self: stretch;
-    border-radius: 20px 20px 0px 0px;
-    border: 1px solid var(--white, #FFF);
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    width: 100%;
     object-fit: cover;
+ 	border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-
-.hebergements-cards .card-content {
+.content-card {
     display: flex;
-    padding:0px 15px 0px 15px;
+    padding: 0px 11px 15px 11px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    align-self: stretch;
+    
 }
 
-
-.hebergements-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+.hebergements-card .card-title {
     font-size: 16px;
 }
 
-
-.hebergements-horizontal-cards-1-a-3 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    align-self: stretch;
-    margin-bottom: 30px;
+.hebergements-card .card-subtitle {
+    font-size: 14px;
 }
-
-.hebergements-horizontal-cards-4-a-6 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    align-self: stretch;
-    margin-bottom: 30px;
-} 
 
 
 
