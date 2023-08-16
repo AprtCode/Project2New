@@ -54,23 +54,37 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
 
-                <div class="localisation">
-                     <i class="fa-solid fa-location-dot"></i>
+                
+                <div class="search-container">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div class="selecteur-villes">
+
+                        <form method="get" action="#">
+
+                            <label for="town"></label>
+
+                            <div class="select-wrapper">
+
+                                <select name="town" id="town">
+
+                                    <option value="Marseille">Marseille, France</option>
+                                    <option value="Lyon">Lyon, France</option>
+                                    <option value="Bordeaux">Bordeaux, France</option>
+                                    <option value="Paris">Paris, France</option>
+                                
+                                </select>
+
+                            </div>
+
+                      </form>
+
+                    </div>
+
+                    <button>Rechercher</button>
+
                 </div>
-
-                <form method="get" action="#">
-                    <p>
-                        <br><label for="town"></label><br/>
-                        <select name="town" id="town">
-                            <option value="Marseille">Marseille, France</option>
-                            <option value="Lyon">Lyon, France</option>
-                            <option value="Bordeaux">Bordeaux, France</option>
-                            <option value="Paris">Paris, France</option>
-                        </select>
-                    </p>
-                </form>
-
-                <button>Rechercher</button>
 
             </section>
 
@@ -78,7 +92,9 @@
             <!-- Section Filtres -->
 
             <section class="filtres">
+
                 <div class="filtres-container">
+
                     <h2 class="filtres-title">Filtres</h2>
 
                     <div class="filtre">
@@ -124,169 +140,167 @@
 
                        
 
-                            <!-- CARD-1 -->
-                            <article class="hebergements-card"> 
+                        <!-- CARD-1 -->
+                        <article class="hebergements-card"> 
                             
-                                <!-- Card 1.1 FOTO Hotel du pont -->
-                                <img src="./images/hebergements/fred-kleber.jpg" alt="Image de Fred-Kleber deux lits"/>
+                            <!-- Card 1.1 FOTO Hotel du pont -->
+                            <img src="./images/hebergements/fred-kleber.jpg" alt="Image de Fred-Kleber deux lits"/>
 
-                                <div class="content-card">
+                            <div class="content-card">
                                 
-                                    <!-- Cards 1.2 TEXT Hotel du port -->
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Hôtel du port</h3>
-                                        <p class="card-subtitle"> Nuit à partir de 52<span class="euro">€</span></p>
-                                    </div>
-
-                                    <!-- Cards 1.3 STARS Hotel du port-->
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-
+                                <!-- Cards 1.2 TEXT Hotel du port -->
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hôtel du port</h3>
+                                    <p class="card-subtitle"> Nuit à partir de 52<span class="euro">€</span></p>
                                 </div>
 
-                            </article>
+                                <!-- Cards 1.3 STARS Hotel du port-->
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
 
-                            <!-- CARD-2 -->
-                            <article class="hebergements-card">
+                            </div>
+
+                        </article>
+
+                        <!-- CARD-2 -->
+                        <article class="hebergements-card">
                             
-                                <!-- Card 2.1 FOTO Hotel chez amina -->
-                                <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de Fred-Zakaria deux lits et un bureau"/>
+                            <!-- Card 2.1 FOTO Hotel chez amina -->
+                            <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de Fred-Zakaria deux lits et un bureau"/>
 
-                                <div class="content-card">
-                                    <!-- Cards 2.2 TEXT Hotel chez amina -->
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Hotel Chez Amina</h3>
-                                        <p class="card-subtitle"> Nuit à partir de 96<span class="euro">€</span> </p>
-                                    </div>
+                            <div class="content-card">
+                                <!-- Cards 2.2 TEXT Hotel chez amina -->
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hotel Chez Amina</h3>
+                                    <p class="card-subtitle"> Nuit à partir de 96<span class="euro">€</span> </p>
+                                </div>
 
-                                    <!-- Cards 2.3 STARS Hotel chez amina -->
+                                <!-- Cards 2.3 STARS Hotel chez amina -->
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <!-- CARD-3 -->
+                        <article class="hebergements-card">
+
+                            <!-- Card 3.1 FOTO Hotel les mouettes -->
+                            <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit"/>
+
+                            <div class="content-card">
+
+                                <!-- Card 3.2 TEXT Hotel les mouettes -->
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hôtel Les mouettes</h3>
+                                    <p class="card-subtitle">Nuit à partir de 76<span class="euro">€</span></p>
+                                </div>
+
+                                <!-- Card 3.3 STARS Hotel les mouettes -->
                                     <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true" ></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
+                            </div>
 
-                            </article>
+                        </article>
 
-                            <!-- CARD-3 -->
-                            <article class="hebergements-card">
-
-                                <!-- Card 3.1 FOTO Hotel les mouettes -->
-                                <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit"/>
-
-                                <div class="content-card">
-
-                                    <!-- Card 3.2 TEXT Hotel les mouettes -->
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Hôtel Les mouettes</h3>
-                                        <p class="card-subtitle">Nuit à partir de 76<span class="euro">€</span></p>
-                                    </div>
-
-                                    <!-- Card 3.3 STARS Hotel les mouettes -->
-                                     <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true" ></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-
-                            </article>
                         
 
-                       
-                        
+                        <!-- CARD-4 -->
+                        <article class="hebergements-card">
 
-                            <!-- CARD-4 -->
-                            <article class="hebergements-card">
+                            <!-- Card 2.1 FOTO Hotel chez amina -->
+                            <img src="./images/hebergements/annie-spratt.jpg" alt="Image de Annie Spratt un lit couple avec grand tableau peinture mer bleu"/>
 
-                                <!-- Card 2.1 FOTO Hotel chez amina -->
-                                <img src="./images/hebergements/annie-spratt.jpg" alt="Image de Annie Spratt un lit couple avec grand tableau peinture mer bleu"/>
+                            <div class="content-card">
 
-                                <div class="content-card">
-
-                                    <!-- Cards 2.2 TEXT Hotel chez amina -->
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Hotel de la mer</h3>
-                                        <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
-                                    </div>
-
-                                    <!-- Cards 2.3 STARS Hotel chez amina -->
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
+                                <!-- Cards 2.2 TEXT Hotel chez amina -->
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hotel de la mer</h3>
+                                    <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
                                 </div>
 
-                            </article>
-
-                            <!-- CARD-5 -->
-                            <article class="hebergements-card">
-
-                                <!-- Card 2.1 FOTO Hotel chez amina -->
-                                <img src="./images/hebergements/marcus-loke.jpg" alt="Image de Marcus Loke deux lits surposes"/>
-
-                                <div class="content-card">
-
-                                    <!-- Cards 2.2 TEXT Hotel chez amina -->
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Auberge La Canebière</h3>
-                                        <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
-                                    </div>
-
-                                    <!-- Cards 2.3 STARS Hotel chez amina -->
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
+                                <!-- Cards 2.3 STARS Hotel chez amina -->
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
-                            </article>
+                            </div>
 
-                            <!-- CARD-6 -->
-                            <article class="hebergements-card">
+                        </article>
 
-                                <!-- Card 2.1 FOTO Hotel chez amina -->
-                                <img src="./images/hebergements/nicate-lee.jpg" alt="Image de Fred-Zakaria deux lits et un bureau"/>
+                        <!-- CARD-5 -->
+                        <article class="hebergements-card">
 
-                                <div class="content-card">
+                            <!-- Card 2.1 FOTO Hotel chez amina -->
+                            <img src="./images/hebergements/marcus-loke.jpg" alt="Image de Marcus Loke deux lits surposes"/>
 
-                                    <!-- Cards 2.2 TEXT Hotel chez amina -->
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Auberge Le Panier</h3>
-                                        <p class="card-subtitle">Nuit à partir de 23<span class="euro">€</span></p>
-                                    </div>
+                            <div class="content-card">
 
-                                    <!-- Cards 2.3 STARS Hotel chez amina -->
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
+                                <!-- Cards 2.2 TEXT Hotel chez amina -->
+                                <div class="card-txt">
+                                    <h3 class="card-title">Auberge La Canebière</h3>
+                                    <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
                                 </div>
-                            </article>
+
+                                <!-- Cards 2.3 STARS Hotel chez amina -->
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CARD-6 -->
+                        <article class="hebergements-card">
+
+                            <!-- Card 2.1 FOTO Hotel chez amina -->
+                            <img src="./images/hebergements/nicate-lee.jpg" alt="Image de Fred-Zakaria deux lits et un bureau"/>
+
+                            <div class="content-card">
+
+                                <!-- Cards 2.2 TEXT Hotel chez amina -->
+                                <div class="card-txt">
+                                    <h3 class="card-title">Auberge Le Panier</h3>
+                                    <p class="card-subtitle">Nuit à partir de 23<span class="euro">€</span></p>
+                                </div>
+
+                                <!-- Cards 2.3 STARS Hotel chez amina -->
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
 
                         
 

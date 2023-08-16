@@ -129,6 +129,14 @@ nav ul li {
 
 /**************** Barre de Recherche ***********/
 
+.barre-de-recherche {
+    display: flex;
+    flex-direction: column;
+    background: var(--white, #FFF);
+    padding: 35px 0px 35px 0px;
+}
+
+/*** H1 P ***/
 
 .barre-de-recherche h1 {
     color: #000;
@@ -149,47 +157,80 @@ nav ul li {
     font-weight: 400;
     line-height: normal;
     margin-top: 0;
+    padding-bottom: 19px;
 }
 
-.localisation i {
+
+/*** SEARCH ***/
+
+.search-container {
+    display: flex;
+    align-items: center;
+    max-width: 377px; 
+    height: 49px; 
+}
+
+.fa-solid.fa-location-dot {
+    color: black;
     display: flex;
     width: 50px;
     height: 49px;
-    border: 1px solid var(--grey, #F2F2F2);
-    border-radius: 15px;
+    border: 1px solid rgba(242, 242, 242, 1);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     align-items: center;
-    background: var(--white, #FFF);
+    justify-content: center;
+    background: rgba(242, 242, 242, 1);
+    margin: 0;
 }
 
-.barre-de-recherche {
+.select-wrapper {
     display: flex;
-    flex-direction: column;
-    background: var(--white, #FFF);
-    padding:35px 0px 35px 0px;
+    align-items: center;
+    justify-content: center; 
+    background: white;
+    border-top: 1px solid var(--grey, #F2F2F2);
+    border-bottom: 1px solid var(--grey, #F2F2F2);
+    flex-grow: 1; 
+    height: 49px;
+    padding: 0 24px; 
+    position: relative;
+    overflow: hidden; 
 }
 
-.town {
+.selecteur-villes select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    width: 100%; 
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 49px; 
     color: var(--black, #000);
     text-align: center;
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    height: 49px;
 }
 
-.barre-de-recherche input {
-
+.selecteur-villes:after {
+    content: '\25BC';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.barre-de-recherche button {
+.search-container button {
     color: var(--white, #FFF);
     text-align: center;
     font-family: Raleway;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     display: flex;
     height: 49px;
     padding: 15px 16px;
@@ -198,7 +239,15 @@ nav ul li {
     border-radius: 0px 15px 15px 0px;
     border: 1px solid var(--blue, #0065FC);
     background: var(--blue, #0065FC);
-    
+    margin-left: auto;
+}
+
+.selecteur-villes select::-ms-expand {
+    display: none;
+}
+
+.selecteur-villes select option:hover {
+    background-color: rgba(0,101,252, 0.1);  
 }
 
 /**************** Filtres ***********/
