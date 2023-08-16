@@ -400,7 +400,7 @@ nav ul li {
 
 .content-card {
     display: flex;
-    padding: 0px 11px 15px 11px;
+    padding: 11px 11px 15px 11px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
