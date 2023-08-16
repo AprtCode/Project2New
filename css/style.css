@@ -372,6 +372,10 @@ nav ul li {
     margin-top: 30px;
 }
 
+.hebergements-cards h3 {
+    margin: 0px 0px 0px 0px;
+}
+
 .hebergements-card {
     display: flex;
     height: 207.5px; /* height specified */
@@ -481,17 +485,22 @@ nav ul li {
     padding: 30px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
+    margin-bottom: 35px;
+    margin-top: 30px;
     align-self: stretch;
+}
+
+.activites-marseille h2 {
+    margin: 0px 0px 0px 0px;
 }
 
 .activites-marseille-barre-horizontale {
     display: flex;
-    width: 1280px;
-    height: 499px;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
-    align-self: stretch;
+    margin-top: 30px;
 }
 
 .activites-marseille-barre-horizontale img {
@@ -506,18 +515,19 @@ nav ul li {
 
 .image-container {
     display: flex;
-    height: 439px;
-    width: 297.5px;
+    flex-wrap: wrap;
     flex-direction: column;
-    flex: 1 0 0;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    flex-grow: 1; 
+    flex-basis: calc(25% - 22.5px); 
+    max-width: 297.5px; 
 
 }
 
 .image-container .card-title {
     margin-top: 20px;
-    margin-bottom: 4px;
+    margin-bottom: 20px;
     margin-left: 20px;
     text-align: left;
     font-size: 16px;
