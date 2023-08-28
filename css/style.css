@@ -18,6 +18,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 .main-container {
@@ -171,9 +172,10 @@ nav ul li {
 }
 
 .fa-solid.fa-location-dot {
+    box-sizing: border-box;
     color: black;
     display: flex;
-    width: 50px;
+    width: 90px;
     height: 49px;
     border: 1px solid rgba(242, 242, 242, 1);
     border-top-left-radius: 15px;
@@ -184,28 +186,13 @@ nav ul li {
     margin: 0;
 }
 
-.select-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    background: white;
-    border-top: 1px solid var(--grey, #F2F2F2);
-    border-bottom: 1px solid var(--grey, #F2F2F2);
-    flex-grow: 1; 
-    height: 49px;
-    padding: 0 24px; 
-    position: relative;
-    overflow: hidden; 
-}
-
-.selecteur-villes select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+.selecteur-villes {
+  
     background: transparent;
     width: 100%; 
-    border: none;
     outline: none;
+    border-radius: 15px;
+    border: 1px solid var(--grey, #F2F2F2);
     margin: 0;
     padding: 0;
     font-family: Raleway, sans-serif;
@@ -217,13 +204,6 @@ nav ul li {
     height: 49px;
 }
 
-.selecteur-villes:after {
-    content: '\25BC';
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
 .search-container button {
     color: var(--white, #FFF);
@@ -250,10 +230,17 @@ nav ul li {
     background-color: rgba(0,101,252, 0.1);  
 }
 
+.loupe {
+    color:#FFF;
+    display: none !important;
+}
+
+
+
+
 /**************** Filtres ***********/
 .filtres {
     color: #000;
-    text-align: center;
     font-family: Raleway;
     font-size: 18px;
     font-style: normal;
@@ -291,12 +278,14 @@ nav ul li {
 
 .filtres-container {
     display: flex;
-    height: 50px;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .filtre {
+    white-space: nowrap;
     display: flex;
     height: 50px;
     padding: 0px 19px; 
@@ -314,7 +303,6 @@ nav ul li {
 
 .filtres-title {
     color: #000;
-    text-align: center;
     font-family: Raleway;
     font-size: 18px;
     font-style: normal;
@@ -366,20 +354,23 @@ nav ul li {
 }
 
 .hebergements-cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     margin-top: 30px;
+    gap: 1rem;
 }
 
 .hebergements-cards h3 {
     margin: 0px 0px 0px 0px;
+    
 }
 
 .hebergements-card {
     display: flex;
     height: 207.5px; /* height specified */
     width: 250.33px; /* widht specified */
+    min-width: 243px;
     flex-direction: column;
     border-radius: 20px;
     background: #FFF;
@@ -602,9 +593,81 @@ nav ul li {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+/*Filtres*/
+    .filtres-title {
+        order: -1; 
+        width: 100%; 
+    }
+
+/*Hebergements*/
+.hebergements-card {
+    width: 243px;
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .loupe {
+        display: block !important;
+    }
+    .rechercher {
+        display: none;
+    }
     /* ... */
+
+/*Header*/
+    .logo {
+        align-items: center;
+        width: 100%;
+        margin: 30px 30px 15px 30px;
+    }
+
+    nav ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .link1nav {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    /*comment faire border 187.5px;???*/    
+        width: 100%;
+        text-align: center;
+    }
+
+    .link2nav {
+        border-top: none;
+        border-bottom: 2px solid rgba(242, 242, 242, 1);
+    /*comment faire border 187.5px;???*/    
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main-container header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+/*Filtres*/
+    .filtres-container {
+        flex-wrap: wrap;
+    }
+
+    .filtre {
+        width: calc(50% - 10px);
+        box-sizing: border-box;
+    }
+
+/*Hebergements*/
+    .hebergements-card {
+        height: 207.5px; /* manter o tamanho original */
+        width: 335px;  /* manter o tamanho original */
+        margin: 0 auto 30px auto;
+    }
+    
+    .hebergements-cards {
+        grid-template-columns: 1fr;  /* Um único cartão por linha */
+        align-items: flex-start; 
+    }
 }
