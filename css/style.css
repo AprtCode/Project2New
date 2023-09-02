@@ -482,7 +482,7 @@ nav ul li {
     display: flex;
     padding: 2em 0;
     flex-direction: row;
-    align-items: flex-start;
+    flex-wrap: wrap;
     margin: 2em 0;
     width: 100%;
 }
@@ -494,16 +494,15 @@ nav ul li {
 
 .activites-marseille-barre-horizontale {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 5px;
     margin-top: 30px;
+    width: 100%
 }
 
 .activites-marseille-barre-horizontale img {
     height: 380px;
-    width: 297.5px;
+    width: 100%;
     flex-shrink: 0;
     align-self: stretch;
     border-radius: 20px 20px 0px 0px;
@@ -517,16 +516,17 @@ nav ul li {
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-    flex-grow: 1; 
-    flex-basis: calc(25% - 22.5px); 
-    max-width: 297.5px; 
+    /*flex-grow: 1;*/ 
+    /*flex-basis: calc(24% - 22.5px);*/
+    max-width: 297.5px;
+    width: 24%; 
 
 }
 
 .image-container .card-title {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 19px;
     text-align: left;
     font-size: 16px;
     color: #000;
@@ -633,10 +633,17 @@ nav ul li {
 /*Hebergements*/
     .hebergements-card {
     width: 243px;
-
     }
 
+
+/* Activites Marseille */
+    .activites-marseille-barre-horizontale img {
+        height: 200px;
+        width: 100%;
+    }
 }
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -766,5 +773,32 @@ nav ul li {
     min-width: auto; /* Reseta o valor de min-width */
     max-width: auto; /* Reseta o valor de max-width */
     }
+
+/* Activites Marseille */
+    .activites-marseille-barre-horizontale {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    }
+
+    .activites-marseille-barre-horizontale img {
+    height: 141px;
+    width: 100%;
+    }
+
+    .image-container {  
+    max-width: 315px;
+    width: 100%; 
+    }
+
+/* Footer */
+
+.footer-container {
+flex-direction: column;
+gap: 50px;
+padding: 30px;
+}
+
+
 
 }
