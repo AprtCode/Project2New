@@ -232,7 +232,6 @@ nav ul li {
     line-height: normal;
     display: flex;
     align-items: center;
-    align-self: stretch;
     font-weight: initial;
     margin: 35px 0px 35px 0px;
 }
